@@ -37,7 +37,7 @@ export const Tree = () => {
         const updatedApples = apples.map((item) => {
             return {
                 ...item,
-                top: 350,
+                top: 300,
             };
         });
 
@@ -55,8 +55,8 @@ export const Tree = () => {
         const updatedApples = apples.map((item) => {
             return {
                 ...item,
-                top: functions.randomGenerateNumber.getRandomInt(225, 257),
-                left: functions.randomGenerateNumber.getRandomInt(810, 950),
+                top: functions.randomGenerateNumber.getRandomInt(180, 200),
+                left: functions.randomGenerateNumber.getRandomInt(715, 850),
             };
         });
         
