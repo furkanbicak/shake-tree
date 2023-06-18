@@ -2,7 +2,11 @@ import { createSlice }  from "@reduxjs/toolkit";
 import functions        from "../functions";
 
 const initialState = {
-    apples: functions.randomGenerateApples.generateApples(8, 1, 10),
+    /* 
+        The function generates a random number of apples with a falling time between 
+        the minimum and maximum values for the specified number of elements.
+    */
+    apples: functions.randomGenerateApples.generateApples(10, 1, 5),
 }
 const apple = createSlice({
     name: "apple",
