@@ -43,7 +43,7 @@ export const Tree = () => {
 
         dispatch(dropApples(updatedApples));
 
-        // Elmalar objesindeki en büyük transition değerini baz alarak, elmaların yere düşmesi beklenir ve 1 saniye sonra elmalar sepete gönderilir.
+        // Based on the largest transition value in the apples object, the apples are expected to fall to the ground, and 1 second later, the apples are sent to the basket.
         setTimeout(() => {  
             handleSendToBaskets(); 
             setLoadingIsEnabled(false);
