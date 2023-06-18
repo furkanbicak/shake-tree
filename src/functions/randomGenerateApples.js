@@ -1,4 +1,5 @@
 export default {
+    // Produces the specified number of apple objects between min and max fall times.
     generateApples: (count, min, max) => {
         const apples = [];
   
@@ -15,6 +16,7 @@ export default {
     }
 };
 
+// Unique fall time generating function
 function uniqTransitionGenerate (apples, min, max) {
     const transitions = apples.map((item) => {
         return item.transition;
