@@ -1,23 +1,12 @@
-import './App.css';
+import { Tree }     from './components/Tree/Tree';
+import style        from './styles/pages/Layout.module.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <div className={style.appContainer}>
+            <Tree />
+        </div>
+    );
+};
 
 export default App;
