@@ -1,0 +1,51 @@
+.container{
+    position: absolute;
+}
+
+.centerContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFF;
+}
+
+.buttonStyle {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    padding: 0 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    height: 48px;
+    cursor: pointer;
+    color: #FFFF;
+    background: radial-gradient( 100% 100% at 100% 0%, #ff8989 0%, #ff2e2e 100% );
+    box-shadow: 0px 2px 4px rgba(66, 35, 35, 0.4), 0px 7px 13px -3px rgba(66, 35, 35, 0.3), inset 0px -3px 0px rgba(111, 58, 75, 0.5);
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+
+.buttonStyle:hover {
+    box-shadow: 0px 4px 8px rgba(66, 35, 35, 0.4), 0px 7px 13px -3px rgba(66, 35, 44, 0.3), inset 0px -3px 0px #f18c8c;
+    transform: translateY(-2px);
+}
+
+.buttonStyle:active{
+    box-shadow: inset 0px 3px 7px #e03c65;
+    transform: translateY(2px);
+}
+
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+    
+
+
+
+
+
+    

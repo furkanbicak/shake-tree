@@ -1,0 +1,10 @@
+.basketContainer {
+    position: relative;
+    top: 300px;
+    left: 0px;
+    z-index: -1;
+}
+
+.basket {
+    max-width: 200px;
+}
