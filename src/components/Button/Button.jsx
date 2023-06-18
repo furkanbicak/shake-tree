@@ -3,38 +3,33 @@ import refreshSvg       from '../../assets/refresh.svg';
 import spinnersSvg      from '../../assets/spinners.svg';
 import styles           from '../../styles/components/Button.module.css';
 
-export const Button = ({ onClick, allApplesInBasket, isEnabled, buttonText }) => {
-
-    const handleClick = () => {
-        onClick();
-    };
-
+export const Button = ({ onClick, allApplesInBasket, isLoadingEnabled, isTryAgainEnabled }) => {
     return (
         <div className={styles.container}>
             {
                 allApplesInBasket ? (
                     <button 
-                        onClick     =   { handleClick } 
+                        onClick     =   { onClick } 
                         className   =   { styles.buttonStyle } 
-                        disabled    =   { isEnabled } 
+                        disabled    =   { isTryAgainEnabled } 
                     >
                         <div className={ styles.centerContainer }>
-                            REPLACE <img src={refreshSvg} alt='refreshSvg'/>
+                            Try Again <img src={refreshSvg} alt='refreshSvg'/>
                         </div>
                     </button>
                 ) : (
                     <button 
-                        onClick     =   { handleClick }  
+                        onClick     =   { onClick }  
                         className   =   { styles.buttonStyle } 
-                        disabled    =   { isEnabled } 
+                        disabled    =   { isLoadingEnabled } 
                         >
                         { 
-                            isEnabled ? ( 
-                                <div className={styles.centerContainer}>
-                                    Loading <img src={spinnersSvg} alt='refreshSvg'/>
+                            isLoadingEnabled ? ( 
+                                <div className={ styles.centerContainer }>
+                                    Loading <img src={ spinnersSvg } alt='refreshSvg'/>
                                 </div>
                             ) : ( 
-                                buttonText 
+                                <p>Shake</p>
                             )
                         }
                     </button>

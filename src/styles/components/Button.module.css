@@ -10,7 +10,9 @@
 }
 
 .buttonStyle {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     outline: 0;
     border: 0;
     padding: 0 32px;
